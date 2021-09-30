@@ -1,0 +1,66 @@
+@font-face{
+  font-family: custom-ZH;
+  src: local("MicrosoftJhengHei"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+6211;
+}
+
+@font-face{
+  font-family: custom-EN;
+  src: 'Noto Sans TC';
+  unicode-range: U+00-024F;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: custom-EN,custom-ZH ;
+  overflow-x: hidden;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.justify-content-between{
+  justify-content: space-between
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
